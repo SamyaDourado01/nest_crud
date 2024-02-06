@@ -33,7 +33,6 @@ export class StateService {
 
   async findCities(): Promise<City[]> {
     return this.stateRepository.find({ relations: { stateCities: true} });
-
   }
 
   async update(id: number, updateStateDto: UpdateStateDto): Promise<State> {

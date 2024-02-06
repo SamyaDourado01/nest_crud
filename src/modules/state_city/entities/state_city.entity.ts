@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { User } from "src/user/entities/user.entity";
 import { City } from "src/modules/city/entities/city.entity";
 import { State } from "src/modules/state/entities/state.entity";
+import { User } from "src/modules/user/entities/user.entity";
 
 @Entity()
 export class StateCity {
